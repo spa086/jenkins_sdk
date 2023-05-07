@@ -1,0 +1,6 @@
+job = Jenkins.instance.getItemByFullName("starbattle")
+job.getBuilds().each {
+  if(it.result == Result.SUCCESS) {
+    it.delete()
+  }
+}
