@@ -4,3 +4,13 @@ job.getBuilds().each {
     it.delete()
   }
 }
+
+// clear + startnew with #1
+________________________________________________________________
+job = Jenkins.instance.getItemByFullName("starbattle")
+job.getBuilds().each { build ->
+  build.delete()
+  }
+  
+  job.updateNextBuildNumber(1)
+  _______________________________________________________________
