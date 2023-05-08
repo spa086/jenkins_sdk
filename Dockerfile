@@ -37,7 +37,7 @@ ENV LC_ALL en_US.UTF-8
 
 #качаем и распаковываем Android Sdk в заранее подготовленную папку
 ARG android_home_dir=/var/lib/android-sdk/
-ARG sdk_tools_zip_file=sdk-tools-linux-4333796.zip
+ARG sdk_tools_zip_file=platform-tools_r34.0.1-linux.zip
 RUN mkdir $android_home_dir
 RUN wget https://dl.google.com/android/repository/$sdk_tools_zip_file -P $android_home_dir -nv
 RUN unzip $android_home_dir$sdk_tools_zip_file -d $android_home_dir
