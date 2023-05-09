@@ -4,7 +4,7 @@ FROM ubuntu:22.04
 # 
 LABEL author="spa"
 LABEL maintainer="spa.skyson@gmail.com"
-LABEL version="0.1"
+LABEL version="0.2"
 LABEL description="Docker image for Jenkins with Android SDK"
 
 # устанавливаем таймзону, чтоб Jenkins показывал локальное время
@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y git \
  sudo \
  tzdata \
  locales\
- openjdk-8-jdk \
+ openjdk-19-jdk \
  libncurses5:i386 \
  libstdc++6:i386 \
  zlib1g:i386
