@@ -17,6 +17,7 @@ RUN dpkg --add-architecture i386
 # обновляем пакеты и устанавливаем нужное
 RUN apt-get update && apt-get install -y git \
  wget \
+ sdkmanager \
  unzip \
  sudo \
  tzdata \
