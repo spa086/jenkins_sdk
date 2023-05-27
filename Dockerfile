@@ -47,7 +47,7 @@ RUN rm $android_home_dir$sdk_tools_zip_file && chmod 777 -R $android_home_dir
 #environment Android SDK
 ENV ANDROID_HOME=$android_home_dir
 ENV PATH="${PATH}:$android_home_dir/tools/bin:$android_home_dir/platform-tools"
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
 
 #licence Android SDK
 RUN yes | sdkmanager --licenses
