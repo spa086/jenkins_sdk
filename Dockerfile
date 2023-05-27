@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y git \
  sudo \
  tzdata \
  locales\
- openjdk-19-jdk \
+ openjdk-17-jdk \
  libncurses5:i386 \
  libstdc++6:i386 \
  zlib1g:i386
@@ -47,7 +47,7 @@ RUN rm $android_home_dir$sdk_tools_zip_file && chmod 777 -R $android_home_dir
 #environment Android SDK
 ENV ANDROID_HOME=$android_home_dir
 ENV PATH="${PATH}:$android_home_dir/tools/bin:$android_home_dir/platform-tools"
-ENV JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64/
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
 
 #licence Android SDK
 RUN yes | sdkmanager --licenses
