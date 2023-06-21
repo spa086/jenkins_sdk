@@ -4,7 +4,7 @@ FROM ubuntu:22.04
 # 
 LABEL author="spa"
 LABEL maintainer="spa.skyson@gmail.com"
-LABEL version="0.2"
+LABEL version="1"
 LABEL description="Docker image for Jenkins with Android SDK"
 
 # устанавливаем таймзону, чтоб Jenkins показывал локальное время
